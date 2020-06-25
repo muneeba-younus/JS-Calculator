@@ -16,39 +16,42 @@
 <body>
     <div class="container calculator">
         <div class="container screen">
-            <div class="equation">
-                <input type="text" name="equation" id="equation">
-            </div>
             <div class="answer">
                 <input type="text" name="answer" id="answer">
             </div>
         </div>
         <div class="container keyboard">
             <div class="row">
-                <button class="operator" onclick="clearBtn()"
-                    style="width: 150px; background-color: rgba(245, 28, 28, 0.68);">C</button>
-                <button class="operator" onclick="getPercentage()">&#37</button>
-                <button class="operator" onclick="getNumber('/')">&#247</button>
+                <button class="operator" onclick="getSine('sin')">sine</button>
+                <button class="operator" onclick="getCosine('cos')">cos</button>
+                <button class="operator" onclick="getTan('tan')">tan</button>
+                <button class="operator" onclick="getNumber('(')">(</button>
+                <button class="operator" onclick="getNumber(')')">)</button>
             </div>
             <div class="row">
                 <button class="number" onclick="getNumber('7')">7</button>
                 <button class="number" onclick="getNumber('8')">8</button>
                 <button class="number" onclick="getNumber('9')">9</button>
-                <button class="operator" onclick="getNumber('*')">&#215</button>
+                <button class="operator" onclick="getSquare('^2')"><i>x<sup>2</sup></i></button>
+                <button class="operator" onclick="getCube('^3')"><i>x<sup>3</sup></i></button>
             </div>
             <div class="row">
                 <button class="number" onclick="getNumber('4')">4</button>
                 <button class="number" onclick="getNumber('5')">5</button>
                 <button class="number" onclick="getNumber('6')">6</button>
-                <button class="operator" onclick="getNumber('-')">&#8722</button>
+                <button class="operator" onclick="getNumber('*')">&#215</button>
+                <button class="operator" onclick="getNumber('/')">&#247</button>
             </div>
             <div class="row">
                 <button class="number" onclick="getNumber('1')">1</button>
                 <button class="number" onclick="getNumber('2')">2</button>
                 <button class="number" onclick="getNumber('3')">3</button>
                 <button class="operator" onclick="getNumber('+')">+</button>
+                <button class="operator" onclick="getNumber('-')">&#8722</button>
             </div>
             <div class="row">
+                <button class="operator" onclick="clearBtn()"
+                    style=" background-color: rgba(245, 28, 28, 0.68);">C</button>
                 <button class="number" onclick="getNumber('0')">0</button>
                 <button class="number" onclick="getNumber('00')">00</button>
                 <button class="number" onclick="getNumber('.')">.</button>
