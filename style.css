@@ -5,7 +5,8 @@
 }
 
 body {
-    background: linear-gradient(30deg,rgba(18, 236, 196, 0.85),rgba(23, 162, 177, 0.843));
+    background: linear-gradient(50deg,rgba(23, 162, 177, 0.843),rgba(48, 168, 228, 0.85));
+    background-attachment: fixed;
 }
 
 .calculator {
