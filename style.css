@@ -5,29 +5,27 @@
 }
 
 body {
-    background: linear-gradient(50deg,rgba(23, 162, 177, 0.843),rgba(48, 168, 228, 0.85));
+    background: linear-gradient(50deg, rgba(23, 162, 177, 0.843), rgba(48, 168, 228, 0.85));
     background-attachment: fixed;
 }
 
 .calculator {
-    width: 350px;
+    width: 450px;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
     top: 40px;
+    padding-bottom: 20px;
     position: relative;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: rgb(247, 245, 245);
 }
 
-.screen {
-    height: 120px;
-}
-
 .number, .operator {
+    text-align: center;
     width: 70px;
     height: 50px;
-    margin: 5px;
+    margin: 5px auto;
     font-weight: bold;
 }
 
@@ -53,17 +51,9 @@ body {
 .equalTo, .equalTo:active, .equalTo:focus {
     background-color: rgb(75, 155, 235);
 }
-.equation > input{
-    text-align: right;
-    outline: 0;
-    border: 0;
-    margin: 15px 0;
-    width: 100%;
-    color: rgb(159, 158, 158);
-    font-size: 18px;
-    background-color: rgb(247, 245, 245);
-}
-.answer > input{
+
+.answer>input {
+    margin: 50px 0;
     text-align: right;
     outline: 0;
     border: 0;
