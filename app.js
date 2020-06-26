@@ -8,7 +8,6 @@ function clearBtn() {
 }
 function getSolution() {
     var answer = document.getElementById("answer");
-
     answer.value = eval(answer.value)
 }
 function getPercentage() {
@@ -28,15 +27,7 @@ function getSquareRoot() {
     var answer = document.getElementById("answer");
     answer.value = Math.sqrt(answer.value);
 }
-function getSine() {
-    var answer = document.getElementById("answer");
-    answer.value = Math.sin(answer.value);
-}
-function getCosine() {
-    var answer = document.getElementById("answer");
-    answer.value = Math.cos(answer.value);
-}
-function getTan() {
-    var answer = document.getElementById("answer");
-    answer.value = Math.tan(answer.value);
+function backspace(){
+    var result = document.getElementById("answer").value;
+    document.getElementById("answer").value = result.substring(0,result.length -1);
 }
