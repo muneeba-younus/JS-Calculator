@@ -27,7 +27,30 @@ function getSquareRoot() {
     var answer = document.getElementById("answer");
     answer.value = Math.sqrt(answer.value);
 }
-function backspace(){
+function backspace() {
     var result = document.getElementById("answer").value;
-    document.getElementById("answer").value = result.substring(0,result.length -1);
+    document.getElementById("answer").value = result.substring(0, result.length - 1);
+}
+function getSine() {
+    var answer = document.getElementById("answer");
+    answer.value = Math.sin(answer.value)
+}
+function getCos() {
+    var answer = document.getElementById("answer");
+    answer.value = Math.cos(answer.value)
+}
+function getTan() {
+    var answer = document.getElementById("answer");
+    answer.value = Math.tan(answer.value)
+}
+function getPi() {
+    var answer = document.getElementById("answer");
+    answer.value = answer.value * Math.PI;
+}
+function getFactorial() {
+    var answer = document.getElementById("answer");
+    var num = answer.value;
+    for (var i = num - 1; i >= 2; i--)
+        num = num * i;
+    answer.value = num;
 }
